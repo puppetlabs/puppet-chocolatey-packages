@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: puppetlabs/puppet-chocolatey-packages
   github_api_key:
-    secure: tXz3r3lqa3L7kCxCeqaHo3S79UaA18KWig7By2HOxz8hpnH5iFkYOizMGig67t7W #https://ci.appveyor.com/tools/encrypt
+    secure: 1YJp8L2h54dD16StLwXOjAssj4UCDHnTNvPVRLghwfCZgcaVehBZb8wztAyDbgL5 #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
@@ -35,7 +35,7 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: 07d26b70044a34c1d9aa5576057d515e
 
   # Force test: gist id for test results
   gist_id_test:
@@ -45,8 +45,8 @@ environment:
     secure: aIC39NG9E2lK5rEFMIXXgAgwfKd45/9Mny1K/eHuD2xSUrDHsz8u032pQdO4PuJ6 # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "glennsarti@users.noreply.github.com"
-- git config --global user.name "Glenn Sarti"
+- git config --global user.email "puppet-chocolatey-bot@users.noreply.github.com"
+- git config --global user.name "Puppet Chocolatey Bot"
 - git config --global core.safecrlf false
 
 install:
