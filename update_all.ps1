@@ -72,6 +72,12 @@ $Options = [ordered]@{
     }
 }
 
+# Workaround for https://github.com/majkinetor/au/issues/142
+[System.Net.ServicePointManager]::SecurityProtocol = 3072 -bor
+  768 -bor
+  [System.Net.SecurityProtocolType]::Tls -bor
+  [System.Net.SecurityProtocolType]::Ssl3
+
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root = $Root                                    #Path to the AU packages
 $global:info = updateall -Name $Name -Options $Options
