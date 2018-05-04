@@ -1,7 +1,7 @@
 # Chocolatey Packages
 
 [![](https://ci.appveyor.com/api/projects/status/github/puppetlabs/puppet-chocolatey-packages?svg=true)](https://ci.appveyor.com/project/puppetlabs/puppet-chocolatey-packages)
-[Update status](https://gist.github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GIST_ID)
+[Update status](https://gist.github.com/puppet-chocolatey-bot/07d26b70044a34c1d9aa5576057d515e)
 
 ## Chocolatey Packages
 
