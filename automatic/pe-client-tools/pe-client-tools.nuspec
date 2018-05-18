@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pe-client-tools</id>
+    <version>0.0.0.0</version>
+    <title>PE Client Tools</title>
+    <authors>Puppet</authors><!-- App Owners -->
+    <owners>Puppet</owners> <!-- Package Maintainers -->
+    <licenseUrl>https://puppet.com/docs/pe/latest/installing/installing_pe_client_tools.html</licenseUrl>
+    <projectUrl>https://puppet.com/docs/pe/latest/installing/installing_pe_client_tools.html</projectUrl>
+    <projectSourceUrl>https://puppet.com/docs/pe/latest/installing/installing_pe_client_tools.html</projectSourceUrl>
+    <docsUrl>https://puppet.com/docs/pe/latest/installing/installing_pe_client_tools.html</docsUrl>
+    <mailingListUrl>https://puppet.com/support-services/customer-support</mailingListUrl>
+    <bugTrackerUrl>https://puppet.com/support-services/customer-support</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/pe-client-tools</packageSourceUrl>
+    <iconUrl><![CDATA[ https://cdn.rawgit.com/ferventcoder/chocolatey-packages/master/icons/puppet.png ]]></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[ The Puppet Enterprise client tools is a set of command line tools that let you access Puppet Enterprise services from a workstation that
+may or may not be managed by Puppet.
+
+Because you can safely run these tools remotely, you no longer need to SSH into the Puppet master to execute commands. Your permissions to see information and to take action are controlled by PE role-based access control (RBAC). Your activity is logged under your username rather than under root or the pe-puppet user.
+
+    ]]></description>
+    <summary>The Puppet Enterprise client tools is a set of command line tools that let you access Puppet Enterprise services</summary>
+    <releaseNotes>See https://puppet.com/download-puppet-enterprise-client-tools</releaseNotes>
+    <tags>puppet client tools pe configuration management ruby enterprise</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: "UTF-8" -->
