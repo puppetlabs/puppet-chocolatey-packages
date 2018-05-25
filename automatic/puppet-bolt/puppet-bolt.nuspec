@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>puppet-bolt</id>
+    <version>0.0.0</version>
+    <title>Puppet Bolt</title>
+    <authors>Puppet</authors>
+    <owners>Puppet</owners>
+    <licenseUrl>https://github.com/puppetlabs/bolt/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://puppet.com/docs/bolt/latest</projectUrl>
+    <projectSourceUrl>https://github.com/puppetlabs/bolt</projectSourceUrl>
+    <docsUrl>https://puppet.com/docs/bolt/latest</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/puppet-users</mailingListUrl>
+    <bugTrackerUrl>https://github.com/puppetlabs/bolt/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/puppet-bolt</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[ Puppet Bolt is an open source task runner that executes ad hoc tasks, scripts, and commands across your infrastructure and applications.
+
+Bolt is great for troubleshooting, deploying on-demand changes, distributing scripts to run across your infrastructure, or automating changes that need to happen in a particular order as part of an application deployment.
+
+Bolt has a command line interface and connects to remote systems with SSH and WinRM, so it doesn't require you to install any agent software. Tasks are reusable and shareable in modules on the Forge, and can be written in any scripting or programming language.
+
+With Bolt you can:
+
+- Execute commands on remote systems.
+- Distribute and execute scripts written in Bash, PowerShell, Python, and other languages.
+- Run Puppet tasks or task plans on remote systems that don't have Puppet installed.
+- Use authentication methods such as passwords and public keys.
+
+    ]]></description>
+    <summary>Puppet Bolt is an open source task runner that executes ad hoc tasks, scripts, and commands across your infrastructure and applications.</summary>
+    <releaseNotes>https://puppet.com/docs/bolt/latest/bolt_release_notes.html</releaseNotes>
+    <tags>puppet bolt winrm ssh tasks configuration management ruby</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: "UTF-8" -->

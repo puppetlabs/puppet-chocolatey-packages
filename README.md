@@ -14,6 +14,7 @@ This project contains the automatic updating packages for the public community c
 * [pdk](https://chocolatey.org/packages/pdk)
 * [pe-client-tools](https://chocolatey.org/packages/pe-client-tools)
 * [puppet-agent](https://chocolatey.org/packages/puppet-agent)
+* [puppet-bolt](https://chocolatey.org/packages/puppet-bolt)
 
 ## Development
 
