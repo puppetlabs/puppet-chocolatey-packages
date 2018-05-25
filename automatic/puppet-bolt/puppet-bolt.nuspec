@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>puppet-bolt</id>
-    <version>0.0.0</version>
+    <version>0.20.3</version>
     <title>Puppet Bolt</title>
     <authors>Puppet</authors>
     <owners>Puppet</owners>
