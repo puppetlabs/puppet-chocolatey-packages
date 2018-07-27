@@ -1,8 +1,8 @@
 ﻿$packageName = 'puppet-bolt'
 $url32       = ''
-$url64       = 'https://downloads.puppetlabs.com/windows/puppet-bolt-0.21.2-x64.msi'
+$url64       = 'https://downloads.puppetlabs.com/windows/puppet-bolt-0.21.4-x64.msi'
 $checksum32  = ''
-$checksum64  = '0c6d25e7e0dde8fcf12e9dba7a11dc7d2931c6e04a987abea0836a987b7ceba4'
+$checksum64  = '9963ca9f8b37345d54d6ca850e8c5bb87647e009499e1ebf820630bb78689b04'
 
 $packageArgs = @{
   packageName    = $packageName
