@@ -2,7 +2,8 @@ import-module au
 
 # No trailing slash
 # Order is important.  Most recent first
-$downloadURLs = @('https://downloads.puppetlabs.com/windows/puppet5',
+$downloadURLs = @('https://downloads.puppetlabs.com/windows/puppet6',
+                  'https://downloads.puppetlabs.com/windows/puppet5',
                   'https://downloads.puppetlabs.com/windows')
 
 function global:au_SearchReplace {
@@ -22,7 +23,7 @@ function global:au_GetLatest {
 
   $downloadURLs | % {
     $downloadURL = $_
-    $download_page = Invoke-WebRequest -Uri $downloadURL
+    $download_page = Invoke-WebRequest -UseBasicParsing -Uri $downloadURL
 
     # Extract all of the puppet-agent versions
     # e.g. puppet-agent-1.0.0-x86.msi
