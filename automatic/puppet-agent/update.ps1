@@ -6,18 +6,11 @@ $downloadURLs = @('https://downloads.puppetlabs.com/windows/puppet6',
                   'https://downloads.puppetlabs.com/windows/puppet5',
                   'https://release-archives.puppet.com/downloads/windows/')
 
-function global:au_BeforeUpdate() {
-  # Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
-  Get-RemoteFiles -Purge
-}
-
 function global:au_SearchReplace {
   @{
     'tools\chocolateyInstall.ps1' = @{
         "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
         "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-        "(^[$]filename32\s*=\s*)('.*')" = "`$1'$($Latest.filename32)'"
-        "(^[$]filename64\s*=\s*)('.*')" = "`$1'$($Latest.filename64)'"
         "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
     }
@@ -56,5 +49,4 @@ function global:au_GetLatest {
   @{ Streams = $streams }
 }
 
-# As we download the MSIs, no need for Checksums
-update -ChecksumFor none
+update
