@@ -2,7 +2,9 @@ import-module au
 
 # No trailing slash
 # Order is important.  Most recent first
-$downloadURLs = @()
+$downloadURLs = @('https://downloads.puppetlabs.com/windows/puppet6',
+                  'https://downloads.puppetlabs.com/windows/puppet5',
+                  'https://release-archives.puppet.com/downloads/windows')
 
 function global:au_SearchReplace {
   @{
