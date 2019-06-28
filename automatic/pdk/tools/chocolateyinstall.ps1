@@ -1,8 +1,8 @@
 ﻿$packageName = 'pdk'
 $url32       = ''
-$url64       = 'https://downloads.puppetlabs.com/windows/pdk-1.10.0.0-x64.msi'
+$url64       = 'https://downloads.puppetlabs.com/windows/puppet6/pdk-1.11.0.0-x64.msi'
 $checksum32  = ''
-$checksum64  = 'd83c1a0e2be44b9d646f52c2d17504b92a06888c6f824a5b5a2c4783a46b31f4'
+$checksum64  = 'cb60903605110ba55b5203f21214fbd93cc786887488aae98918f32c8a73c7cc'
 
 $packageArgs = @{
   packageName    = $packageName
