@@ -1,10 +1,10 @@
 ﻿$packageName = 'puppet-bolt'
 $url32       = ''
-$url64       = 'https://downloads.puppetlabs.com/windows/puppet6/puppet-bolt-2.26.0-x64.msi'
+$url64       = 'https://downloads.puppetlabs.com/windows/puppet6/puppet-bolt-2.27.0-x64.msi'
 $filename32  = ''
-$filename64  = 'puppet-bolt-2.26.0-x64_x64.msi'
+$filename64  = 'puppet-bolt-2.27.0-x64_x64.msi'
 $checksum32  = ''
-$checksum64  = '2E90C0BAB554658BCA284A164D4DEAA90ACAB6AB2A10DC532CB7B00EF5159B23'
+$checksum64  = '032BD225C227DEB640E4E566EC2C7343462B1A92ED958D5BDF5DB8846316A048'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
