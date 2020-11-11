@@ -1,8 +1,8 @@
 ﻿$packageName = 'pe-client-tools'
 $url32       = ''
-$url64       = 'https://pm.puppet.com/pe-client-tools/2019.8.1/19.8.2/repos/windows/pe-client-tools-19.8.2-x64.msi'
+$url64       = 'https://pm.puppet.com/pe-client-tools/2019.8.2/19.8.4/repos/windows/pe-client-tools-19.8.4-x64.msi'
 $checksum32  = ''
-$checksum64  = '1fbba2c5dfec61ab7907aac89da824b6f02fdb5fc903b2e72f218ca3b67c2895'
+$checksum64  = '3a99d0dae68e54e20b52b38a42e33a9347198c7c7e0235a1951ff82386c15595'
 
 $packageArgs = @{
   packageName    = $packageName
