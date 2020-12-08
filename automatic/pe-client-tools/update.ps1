@@ -67,7 +67,7 @@ function global:au_GetLatest {
   }
 
   # Get previous versions
-  $download_page = Invoke-WebRequest -Uri 'http://downloads.puppetlabs.com/enterprise/sources/' -UseBasicParsing
+  $download_page = Invoke-WebRequest -Uri 'http://downloads.puppet.com/enterprise/sources/' -UseBasicParsing
   $download_page.links | Where-Object { $_.href -match '^2\d{3,3}\.\d+.\d+$'} | ForEach-Object { Write-Output (ConvertTo-SortableVersionString -Value $_.href) } | Sort-Object -Descending | ForEach-Object {
     $PEVersion = ConvertFrom-SortableVersionString -Value $_
     $PEReleaseURI = 'https://puppet.com/misc/pe-files/previous-releases/' + $PEVersion
