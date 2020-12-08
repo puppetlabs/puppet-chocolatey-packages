@@ -13,7 +13,7 @@
     <mailingListUrl>https://puppet.com/support-services/customer-support</mailingListUrl>
     <bugTrackerUrl>https://puppet.com/support-services/customer-support</bugTrackerUrl>
     <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/pe-client-tools</packageSourceUrl>
-    <iconUrl><![CDATA[ https://cdn.rawgit.com/ferventcoder/chocolatey-packages/master/icons/puppet.png ]]></iconUrl>
+    <iconUrl><![CDATA[ https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet.png ]]></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[ The Puppet Enterprise client tools is a set of command line tools that let you access Puppet Enterprise services from a workstation that
 may or may not be managed by Puppet.
