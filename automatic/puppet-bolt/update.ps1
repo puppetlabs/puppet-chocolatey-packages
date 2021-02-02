@@ -2,8 +2,8 @@ import-module au
 
 # No trailing slash
 # Order is important.  Most recent first
-$downloadURLs = @('https://downloads.puppet.com/windows/puppet6',
-                  'https://downloads.puppet.com/windows/puppet5')
+$downloadURLs = @('https://downloads.puppet.com/windows/puppet-tools',
+    'https://downloads.puppet.com/windows/puppet5')
 
 function global:au_BeforeUpdate() {
   # Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
