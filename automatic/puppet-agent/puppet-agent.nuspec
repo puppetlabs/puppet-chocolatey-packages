@@ -25,9 +25,9 @@ Puppet Agent is an "All-in-One" package that installs Puppet, Ruby, Facter, Hier
 
 ### Install Options
 
-You can pass installArgs to Chocolatey for several properties. See http://docs.puppetlabs.com/puppet/latest/reference/install_windows.html#msi-properties for the exact properties. You would pass through the arguments to the installer using 'installArgs'. Here is an example of changing the location of the Puppet Master:
+You can pass installArgs to Chocolatey for several properties. See https://puppet.com/docs/puppet/latest/install_agents.html#install_windows_agents for the exact properties. You would pass through the arguments to the installer using 'installArgs'. Here is an example of changing the location of the Puppet Master:
 
-`-installArgs '"PUPPET_MASTER_SERVER=puppet.fqdn.com"'`
+`-installArgs '"PUPPET_SERVER=puppet.fqdn.com"'`
 
 ### New Puppet-Agent Package
 **NOTICE**: This package replaces the Puppet v3 series package known as [puppet](https://chocolatey.org/packages/puppet). A new package was created in other package distributions so Chocolatey is also following suit.
