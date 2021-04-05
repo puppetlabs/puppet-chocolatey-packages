@@ -22,7 +22,7 @@ $packageArgs = @{
 Install-ChocolateyInstallPackage @packageArgs
 
 #Put Bolt on the Machine Path, as opposed to User. This is good for C4B customers running Background Mode, as the User PATH is in Agent context, causing issues.
-if (-not $pp['InstallOnUserPath']) {
+if ($pp['InstallOnMachinePath']) {
   Remove-PathVariable -VariableToRemove "C:\Program Files\Puppet Labs\Bolt\bin"
   $PathArgs = @{
     PathToInstall = 'C:\Program Files\Puppet Labs\Bolt\bin'
