@@ -1,8 +1,8 @@
 ﻿$packageName = 'puppet-agent'
-$url32       = 'https://downloads.puppet.com/windows/puppet7/puppet-agent-7.5.0-x86.msi'
-$url64       = 'https://downloads.puppet.com/windows/puppet7/puppet-agent-7.5.0-x64.msi'
-$checksum32  = '1bdb26b288b5569a4da79fb4ad5f98f0c314cb8be03c201f30331e7d64fac78d'
-$checksum64  = '9cbd6cbb89024fffb1056692b11fb313cc6c001d001580806d592f8a5ad623db'
+$url32       = 'https://downloads.puppet.com/windows/puppet7/puppet-agent-7.6.1-x86.msi'
+$url64       = 'https://downloads.puppet.com/windows/puppet7/puppet-agent-7.6.1-x64.msi'
+$checksum32  = 'da177834d590bba896d096c799b86e524908b3083c09c679ea1d733e3fe1dd80'
+$checksum64  = 'a76ac4bff9e1011919da8fcc8581388cb288a101e056403917c2d7f88c72e5a7'
 
 
 $packageArgs = @{
