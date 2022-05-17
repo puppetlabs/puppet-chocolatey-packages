@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pe-client-tools</id>
-    <version>21.5.0</version>
+    <version>21.6.0</version>
     <title>PE Client Tools</title>
     <authors>Puppet</authors><!-- App Owners -->
     <owners>Puppet</owners> <!-- Package Maintainers -->
