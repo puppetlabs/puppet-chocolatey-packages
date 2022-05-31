@@ -6,7 +6,7 @@
     <title>Puppet Agent (Install)</title>
     <authors>Puppet</authors>
     <owners>Puppet</owners>
-    <projectUrl>https://puppet.com/docs/puppet/latest</projectUrl>
+    <projectUrl>https://puppet.com/open-source/</projectUrl>
     <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/puppet-agent</packageSourceUrl>
     <projectSourceUrl>https://github.com/puppetlabs/puppet</projectSourceUrl>
     <docsUrl>https://learn.puppet.com/</docsUrl>
