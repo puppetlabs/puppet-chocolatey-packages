@@ -6,11 +6,11 @@
     <title>Puppet Development Kit</title>
     <authors>Puppet</authors>
     <owners>Puppet</owners>
-    <licenseUrl>https://github.com/puppetlabs/pdk/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://puppet.com/docs/pdk/latest/pdk.html</projectUrl>
+    <licenseUrl>https://github.com/puppetlabs/pdk/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://puppet.com/docs/pdk</projectUrl>
     <projectSourceUrl>https://github.com/puppetlabs/pdk</projectSourceUrl>
-    <docsUrl>https://puppet.com/docs/pdk/latest/pdk.html</docsUrl>
-    <mailingListUrl>https://puppet.com/support-services/customer-support</mailingListUrl>
+    <docsUrl>https://puppet.com/docs/pdk</docsUrl>
+    <mailingListUrl>https://puppet.com/support</mailingListUrl>
     <bugTrackerUrl>https://github.com/puppetlabs/pdk/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/pdk</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet.png</iconUrl>
@@ -23,7 +23,7 @@ You can also convert existing modules to make them compatible with PDK. This all
 
     ]]></description>
     <summary>Puppet Development Kit (PDK) is a package of development and testing tools to help you create great Puppet modules.</summary>
-    <releaseNotes>See https://github.com/puppetlabs/pdk/blob/master/CHANGELOG.md</releaseNotes>
+    <releaseNotes>See https://github.com/puppetlabs/pdk/blob/main/CHANGELOG.md</releaseNotes>
     <tags>puppet development kit modules configuration management ruby</tags>
   </metadata>
   <files>
