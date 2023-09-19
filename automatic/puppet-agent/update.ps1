@@ -2,7 +2,8 @@ import-module au
 
 # No trailing slash
 # Order is important.  Most recent first
-$downloadURLs = @('https://downloads.puppet.com/windows/puppet7',
+$downloadURLs = @('https://downloads.puppet.com/windows/puppet8',
+                  'https://downloads.puppet.com/windows/puppet7',
                   'https://downloads.puppet.com/windows/puppet6',
                   'https://downloads.puppet.com/windows/puppet5',
                   'https://release-archives.puppet.com/downloads/windows')
