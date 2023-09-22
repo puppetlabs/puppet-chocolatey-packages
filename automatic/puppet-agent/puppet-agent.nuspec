@@ -11,7 +11,7 @@
     <projectSourceUrl>https://github.com/puppetlabs/puppet</projectSourceUrl>
     <docsUrl>https://learn.puppet.com/</docsUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/puppet-users</mailingListUrl>
-    <bugTrackerUrl>https://tickets.puppet.com/browse/PUP</bugTrackerUrl>
+    <bugTrackerUrl>https://puppet.atlassian.net/browse/PUP/</bugTrackerUrl>
     <licenseUrl>https://github.com/puppetlabs/puppet/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet.png</iconUrl>
