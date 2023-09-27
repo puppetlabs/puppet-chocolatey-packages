@@ -13,6 +13,7 @@ branches:
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
+  forced: puppet-agent:8.2.0
   au_version:
   au_push: true
   # Force test: use 1 to test all, or N to split testing into N groups
