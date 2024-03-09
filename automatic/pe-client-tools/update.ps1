@@ -53,10 +53,10 @@ function global:au_GetLatest {
   #https://pm.puppet.com/pe-client-tools/2018.1.0/18.1.0/repos/windows/pe-client-tools-18.1.0-x64.msi
   $streams = [ordered]@{}
   $VersionList = @{}
-  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
   # Get the latest version
-  $download_page = Invoke-WebRequest -Uri 'https://puppet.com/download-puppet-enterprise-client-tools' -UseBasicParsing
+  Write-Host "Before scraping client-tools"
+  $download_page = Invoke-WebRequest -Uri 'https://puppet.com/downloads/client-tools' -UseBasicParsing
   $download_page.links | Where-Object { $_.href -match $ClientToolsRegex } | ForEach-Object {
     $fileUri = $_.href
 
@@ -67,7 +67,8 @@ function global:au_GetLatest {
   }
 
   # Get previous versions
-  $download_page = Invoke-WebRequest -Uri 'http://downloads.puppet.com/enterprise/sources/' -UseBasicParsing
+    Write-Host "Getting previous versions"
+    $download_page = Invoke-WebRequest -Uri 'http://downloads.puppet.com/enterprise/sources/' -UseBasicParsing
   $download_page.links | Where-Object { $_.href -match '^2\d{3,3}\.\d+.\d+$'} | ForEach-Object { Write-Output (ConvertTo-SortableVersionString -Value $_.href) } | Sort-Object -Descending | ForEach-Object {
     $PEVersion = ConvertFrom-SortableVersionString -Value $_
     $PEReleaseURI = 'https://puppet.com/misc/pe-files/previous-releases/' + $PEVersion

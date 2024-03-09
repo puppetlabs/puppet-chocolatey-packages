@@ -78,6 +78,7 @@ $Options = [ordered]@{
   [System.Net.SecurityProtocolType]::Tls -bor
   [System.Net.SecurityProtocolType]::Ssl3
 
+Write-Host "Does this run over here?"
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root = $Root                                    #Path to the AU packages
 $global:info = updateall -Name $Name -Options $Options
