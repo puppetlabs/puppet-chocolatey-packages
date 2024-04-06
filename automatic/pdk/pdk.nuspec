@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pdk</id>
@@ -13,7 +13,7 @@
     <mailingListUrl>https://puppet.com/support</mailingListUrl>
     <bugTrackerUrl>https://github.com/puppetlabs/pdk/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/pdk</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/puppetlabs/puppet-chocolatey-packages@master/icons/puppet.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[ Puppet Development Kit (PDK) is a package of development and testing tools to help you create great Puppet modules.
 
@@ -30,4 +30,3 @@ You can also convert existing modules to make them compatible with PDK. This all
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: "UTF-8" -->
