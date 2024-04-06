@@ -64,38 +64,38 @@ install:
 
 build_script:
 - ps: |
-    $ErrorActionPreference = 'Continue'
+  $ErrorActionPreference = 'Continue'
 
-    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
+  if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
-    if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
-        switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
-        {
-            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+  if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
+      switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
+      {
+          '\[AU (.+?)\]'   { $forced = $Matches[1] }
 
-            '\[PUSH (.+?)\]' {
-                $packages = $Matches[1] -split ' '
-                Write-Host "PUSHING PACKAGES: $packages"
-                foreach ($package in $packages) {
-                    Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
-                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
-                    if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
-                    pushd $package_dir; choco pack; Push-Package; popd
-                }
-                return
-            }
+          '\[PUSH (.+?)\]' {
+              $packages = $Matches[1] -split ' '
+              Write-Host "PUSHING PACKAGES: $packages"
+              foreach ($package in $packages) {
+                  Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
+                  $package_dir = Get-ChildItem -Recurse | Where-Object { $_.Name -eq "$package.nuspec"} | Select-Object -First 1 | ForEach-Object Directory
+                  if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
+                  Push-Location $package_dir; choco pack; Push-Package; Pop-Location
+              }
+              return
+          }
 
-            default {
-                Write-Host "Commit message is not automated format.  Disabling Pushing, Git and Gist"
-                $Env:au_push = 'false'
-                $Env:github_api_key = ''
-                $Env:gist_id = ''
-            }
-        }
-    }
+          default {
+              Write-Host "Commit message is not automated format.  Disabling Pushing, Git and Gist"
+              $Env:au_push = 'false'
+              $Env:github_api_key = ''
+              $Env:gist_id = ''
+          }
+      }
+  }
 
-    ./update_all.ps1 -ForcedPackages $forced
-    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+  ./update_all.ps1 -ForcedPackages $forced
+  7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
 - path: update_info.xml
