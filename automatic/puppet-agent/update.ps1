@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 # No trailing slash
 # Order is important.  Most recent first
@@ -23,14 +23,14 @@ function global:au_GetLatest {
 
   $streams = [ordered]@{}
 
-  $downloadURLs | % {
+  $downloadURLs | ForEach-Object {
     $downloadURL = $_
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri $downloadURL
 
     # Extract all of the puppet-agent versions
     # e.g. puppet-agent-1.0.0-x86.msi
     $re  = "puppet-agent-(\d+\.\d+\.\d+)-x(86|64).msi"
-    $versionList = $download_page.links | ForEach-Object {
+    $download_page.links | ForEach-Object {
       if ($matches.count -gt 0) { [void]$matches.clear }
       if ($_ -match $re) {
         Write-Output ([System.Version]$matches[1])
@@ -51,4 +51,4 @@ function global:au_GetLatest {
   @{ Streams = $streams }
 }
 
-update
+Update-Package

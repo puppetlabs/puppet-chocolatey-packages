@@ -6,7 +6,7 @@
     <title>Puppet Agent (Install)</title>
     <authors>Puppet</authors>
     <owners>Puppet</owners>
-    <projectUrl>https://puppet.com/open-source/</projectUrl>
+    <projectUrl>https://www.puppet.com/community/open-source</projectUrl>
     <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/puppet-agent</packageSourceUrl>
     <projectSourceUrl>https://github.com/puppetlabs/puppet</projectSourceUrl>
     <docsUrl>https://learn.puppet.com/</docsUrl>
@@ -14,7 +14,7 @@
     <bugTrackerUrl>https://puppet.atlassian.net/browse/PUP/</bugTrackerUrl>
     <licenseUrl>https://github.com/puppetlabs/puppet/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/puppetlabs/puppet-chocolatey-packages@master/icons/puppet.png</iconUrl>
     <description>
 Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform. As a declarative, model-based approach to IT automation, it lets you define the desired state – or the “what” – of your infrastructure using the Puppet configuration language. Once these configurations are deployed, Puppet automatically installs the necessary packages and starts the related services, and then regularly enforces the desired state. In automating the mundane, Puppet frees you to work on more challenging projects with higher business impact.
 
@@ -47,4 +47,3 @@ let them know the package is no longer updating correctly.
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: "UTF-8" -->
