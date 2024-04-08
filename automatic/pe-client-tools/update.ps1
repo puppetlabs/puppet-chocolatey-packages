@@ -94,7 +94,7 @@ function global:au_GetLatest {
   }
 
   # Now we have a version list time to get the Stream versioning
-  $VersionList.Keys | ForEach-Object { Write-Output (ConvertTo-SortableVersionString -Value $_) } | Sort-Object -Descending | % {
+  $VersionList.Keys | ForEach-Object { Write-Output (ConvertTo-SortableVersionString -Value $_) } | Sort-Object -Descending | ForEach-Object {
     $ClientToolsVersion = ConvertFrom-SortableVersionString -Value $_
     $StreamVersion = ConvertTo-StreamVersion -Value $ClientToolsVersion
 
