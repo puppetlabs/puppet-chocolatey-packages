@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>puppet-bolt</id>
@@ -13,7 +13,7 @@
     <mailingListUrl>https://groups.google.com/forum/#!forum/puppet-users</mailingListUrl>
     <bugTrackerUrl>https://github.com/puppetlabs/bolt/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/puppetlabs/puppet-chocolatey-packages/tree/master/automatic/puppet-bolt</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/puppetlabs/puppet-chocolatey-packages/master/icons/puppet-bolt.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/puppetlabs/puppet-chocolatey-packages@master/icons/puppet-bolt.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[ Puppet Bolt is an open source task runner that executes ad hoc tasks, scripts, and commands across your infrastructure and applications.
 
@@ -37,4 +37,3 @@ With Bolt you can:
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: "UTF-8" -->
