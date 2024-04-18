@@ -7,7 +7,7 @@ image: WMF 5
 #clone_depth: 5
 branches:
   only:
-  - repo_maintenance
+  - master
 #build:
 #  verbosity: minimal
 
