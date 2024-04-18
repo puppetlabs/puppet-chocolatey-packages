@@ -51,7 +51,7 @@ function global:au_GetLatest {
   #https://pm.puppet.com/pe-client-tools/2018.1.0/18.1.0/repos/windows/pe-client-tools-18.1.0-x64.msi
   $streams = [ordered]@{}
   $VersionList = @{}
-  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  #[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
   # Get the latest version
   $download_page = Invoke-WebRequest -Uri 'https://puppet.com/download-puppet-enterprise-client-tools' -UseBasicParsing
