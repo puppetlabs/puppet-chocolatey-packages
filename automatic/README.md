@@ -1,8 +1,8 @@
 ## Automatic Folder
 
-This is where you put your Chocolatey packages that are automatically packaged up by either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater).
+This is where you put your Chocolatey packages that are automatically packaged up by the chocolatey-au PowerShell Module. [repo](https://github.com/chocolatey-community/chocolatey-au)
 
-### Automatic Updater (AU)
+### Chocolatey Automatic Updater (chocolatey-AU)
 
 AU works with packages without automatic package tokens necessary. So you can treat the packages as normal.
 

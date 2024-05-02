@@ -20,7 +20,7 @@ This project contains the automatic updating packages for the public community c
 
 ### Folder Structure
 
-* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://chocolatey.org/packages/au).
+* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [chocolatey-AU](https://github.com/chocolatey-community/chocolatey-au).
 
 * icons - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
 
@@ -36,7 +36,7 @@ For setting up your own automatic package repository, please see [Automatic Pack
 #### AU
 
 * PowerShell v5+.
-* The [AU module](https://chocolatey.org/packages/au).
+* The [chocolatey-AU module](https://github.com/chocolatey-community/chocolatey-au).
 
 For daily operations check out the AU packages [template README](https://github.com/majkinetor/au-packages-template/blob/master/README.md).
 
