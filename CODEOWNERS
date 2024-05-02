@@ -3,5 +3,5 @@
 * @puppetlabs/windows @glennsarti
 
 # Individual projects
-automatic/pdk/          @puppetlabs/pdk
+automatic/pdk/          @puppetlabs/devx
 automatic/puppet-bolt/  @puppetlabs/bolt
