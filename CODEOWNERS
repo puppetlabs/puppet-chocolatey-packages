@@ -1,7 +1,7 @@
 # Default owners. Note that the Windows team is defunct
 # but a useful collection of people with Windows experience
-* @puppetlabs/windows @glennsarti
+* @puppetlabs/windows
 
 # Individual projects
-automatic/pdk/          @puppetlabs/pdk
+automatic/pdk/          @puppetlabs/devx
 automatic/puppet-bolt/  @puppetlabs/bolt
